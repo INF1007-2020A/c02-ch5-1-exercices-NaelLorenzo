@@ -9,14 +9,34 @@ def get_bill(name, data):
     INDEX_QUANTITY = 1
     INDEX_PRICE = 2
 
-    return ""
+    return "uuu"
 
 
 def format_number(number, num_decimal_digits):
+    # Séparation entier décimal
+    decimal_part = abs(number) % 1.0
+    whole_part = int(abs(number))
+
+    # Formater partie décimal
+    #    Approche plus automatique : decimal_string = f"(decimal_part :.{num_decimal_digits}f"[1:]
+    decimal_part = str(int(round(decimal_part * 10 ** num_decimal_digits)))
+
+    # Formater partie entière
+    while whole_part >= 1000
+        digits = whole_part % 1000
+        digit_string = f"{digits :.0}"
+
+    # Concaténer les 2
+
+
     return ""
 
 
 def get_triangle(num_rows):
+    border_char = '+'
+    triangle_char = 'A'
+
+    triangle_width =
     return ""
 
 
