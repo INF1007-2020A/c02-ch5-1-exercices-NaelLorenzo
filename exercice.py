@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 import random
 
 
@@ -19,10 +18,10 @@ def format_number(number, num_decimal_digits):
 
     # Formater partie décimal
     #    Approche plus automatique : decimal_string = f"(decimal_part :.{num_decimal_digits}f"[1:]
-    decimal_part = str(int(round(decimal_part * 10 ** num_decimal_digits)))
-
+    decimal_str = str(int(round(decimal_part * 10 ** num_decimal_digits)))
+    decimal_str = "."+"0"*(num_decimal_digits) - len()
     # Formater partie entière
-    while whole_part >= 1000
+    while whole_part >= 1000:
         digits = whole_part % 1000
         digit_string = f"{digits :.0}"
 
@@ -36,7 +35,7 @@ def get_triangle(num_rows):
     border_char = '+'
     triangle_char = 'A'
 
-    triangle_width =
+    triangle_width = '...'
     return ""
 
 
